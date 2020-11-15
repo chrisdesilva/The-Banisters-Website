@@ -1,228 +1,225 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-image: url("http://bit.ly/2IwLg7l");
-  font-family: 'Arimo', sans-serif;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: black;
+  font-family: "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-#wrapper {
-  display: grid;
-  width: 100%;
-  grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
-  grid-template-rows: 75px .5fr .75fr .75fr 1fr .5fr .15fr;
-  grid-row-gap: 5px;
+.navbar-brand {
+  font-size: 2rem;
 }
 
-header {
-  grid-column: 3 / 4;
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: black;
-  display: flex;
-  align-items: center;
-}
-
-#siteNav {
-  grid-column: 3 / span 1;
-}
-
-ul {
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  justify-content: center;
-  padding-left: 0;
-  list-style-type: none;
-}
-
-li>a {
-  text-decoration: none;
-  list-style-type: none;
-  padding-left: 30px;
-  padding-right: 30px;
-  color: black;
-  transition: all .5s ease-in-out;
-}
-
-li>a:hover {
-  color: green;
-}
-
-#home {
-  grid-row-start: 2;
-  grid-column: 2 / span 3;
-  padding-bottom: 10px;
-  justify-content: center;
-  align-items: center;
-  background-image: url(http://bit.ly/2IwrKb5);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
-}
-
-h1 {
-  font-family: 'Rock Salt', cursive;
+.fas .fas:visited {
   color: white;
-  font-size: 72px;
-  /* mix-blend-mode: darken;
-  background-color: #092F27; */
+  text-decoration: none;
+}
+
+.banner {
+  position: relative;
+  margin: auto;
+}
+
+.blockquote {
+  position: absolute;
+  top: 100px;
+  left: 0;
   width: 100%;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 1.5px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.blockquoteFooter {
+  position: absolute;
+  top: 600px;
+  left: 0;
+  width: 100%;
+  font-family: "Staatliches", cursive;
+  background: rgba(0, 0, 0, 0.5);
+  padding-bottom: 20px;
 }
 
 h2 {
-  font-family: 'Rock Salt', cursive;
-  text-decoration: underline;
-}
-
-.logo>img {
-  width: 447px;
-  height: 78px;
-  padding-top: 20px;
-}
-
-#musicVideo {
-  display: flex;
-  justify-content: center;
-}
-
-#about {
-  grid-row-start: 3;
-  grid-column: 2 / span 3;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  font-family: "Staatliches", cursive;
   color: white;
-  background-color: black;
-  padding: 50px;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
-#field {
-  padding-top: 50px;
-  margin: auto;
-  width: 600px;
-  height: 400px;
+blockquote {
+  color: white;
+  text-align: center;
 }
 
+.blockquote p {
+  font-size: 1rem;
+}
+
+.blockquote-footer a {
+  font-size: 1rem;
+  text-decoration-style: none;
+}
+
+p {
+  color: white;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+#mainNavbar .navbar-brand {
+  font-family: "Rock Salt", cursive;
+  color: white;
+}
+
+#mainNavbar .nav-link {
+  color: white;
+  transition: all 300ms ease-in-out;
+}
+
+#mainNavbar .nav-link:hover {
+  color: #967bb0;
+}
+
+#mainNavbar {
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: black;
+}
+
+#opacity {
+  opacity: 0.7;
+  transition: all 500ms ease-in-out;
+}
+
+#opacity:hover {
+  opacity: 1;
+}
+
+/*#dates refer to Bandsintown widget*/
 #dates {
-  grid-row-start: 4;
-  grid-column: 2/span 3;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  background-color: black;
-  padding: 50px;
+  background: white;
+  font-family: "Staatliches", cursive;
 }
 
-#cheerUps {
-  padding: 50px;
-  width: 650px;
-  height: 550px;
+#dates .bit-widget {
+  min-width: 200px;
+  font-family: "Staatliches", cursive;
+  font-size: 1.25em;
 }
 
-#music {
-  grid-row-start: 5;
-  grid-column: 2/span 3;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  background-color: black;
-  padding: 50px;
+#dates .bit-widget .bit-event .bit-button {
+  width: 100px;
 }
 
-#booking {
-  grid-row-start: 6;
-  grid-column: 2/span 3;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  background-color: black;
-  padding: 50px;
+#dates .bit-venue-name .bit-location {
+  font-family: "Staatliches", cursive;
+  color: black;
+}
+
+.black {
+  color: black;
 }
 
 #mailTo {
   text-decoration: none;
   color: white;
-  transition: all .5s ease-in-out
+  transition: all 0.5s ease-in-out;
 }
 
 #mailTo:hover {
-  color: green;
+  color: #0f4944;
 }
 
-input[type=text] {
-  width: 50%;
-  margin-bottom: 15px;
-}
-
-input[type=email] {
-  width: 50%;
-  margin-bottom: 15px;
-}
-
-input[name=inquiry] {
-  height: 250px;
-  margin-bottom: 15px;
-}
-
-input[type=submit] {
-  background-color: black;
+.fab {
   color: white;
-  border: 5px solid white;
-  padding: 10px;
-  transition: all .5s ease-in-out
-}
-
-input[type=submit]:hover {
-  cursor: pointer;
-  border: 5px solid green;
-  color: green;
-}
-
-footer {
-  grid-row-start: 7;
-  grid-column: 2/span 3;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-left: 250px;
-  padding-right: 250px;
-  margin-bottom: 5px;
-}
-
-.socialMedia {
-  width: 40px;
-  text-decoration: none;
-  background-color: white;
+  transition: all 0.5s ease-in-out;
   border-radius: 50%;
-  transition: all .5s ease-in-out
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
-#facebook:hover {
-  background-color: #4267B2;
+.fa-facebook-square:hover {
+  color: #4267b2;
 }
 
-#spotify:hover {
-  background-color: #1ED760;
+.fa-spotify:hover {
+  color: #1ed760;
 }
 
-#youtube:hover {
-  background-color: #CD201F;
+.fa-youtube:hover {
+  color: #cd201f;
 }
 
-#twitter:hover {
-  background-color: #1DA1F3;
+.fa-instagram:hover {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.fa-twitter:hover {
+  color: #1da1f3;
+}
+
+#booking {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+@media (min-width: 1200px) {
+  .blockquote p {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 544px) {
+  .blockquote p {
+    font-size: 1.25rem;
+  }
+
+  .blockquote-footer a {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 544px) {
+  .blockquoteFooter {
+    top: 300px;
+  }
+
+  body {
+    background: black;
+  }
+}
+
+@media (min-width: 768px) {
+  .blockquote p {
+    font-size: 1.5rem;
+  }
+
+  .blockquote {
+    top: 200px;
+  }
+
+  .blockquote-footer a {
+    font-size: 1.5rem;
+  }
+
+  .blockquoteFooter {
+    top: 200px;
+  }
 }
